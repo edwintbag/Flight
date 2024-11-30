@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flight Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="avatar"></div>
+                <h2>Alex Johnson</h2>
+                <p>alex.johnson@gmail.com</p>
+            </div>
+            <nav class="menu">
+                <a href="#">Dashboard</a>
+                <a href="#">Flights</a>
+                <a href="#">Wallet</a>
+                <a href="#">Reports</a>
+                <a href="#">Statistics</a>
+                <a href="#">Settings</a>
+            </nav>
+            <div class="active-users">
+                <h3>Active Users</h3>
+                <div class="users">
+                    <span class="user"></span>
+                    <span class="user"></span>
+                    <span class="user"></span>
+                    <span class="user"></span>
+                    <span class="more">+70</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search Section -->
+            <section class="search-bar">
+                <div class="search-inputs">
+                    <input type="text" placeholder="New York (JFK)">
+                    <input type="text" placeholder="Mumbai (BOM)">
+                    <input type="date">
+                    <select>
+                        <option>First Class</option>
+                        <option>Business Class</option>
+                        <option>Economy Class</option>
+                    </select>
+                    <button>Search</button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results">
+                <h2>Results (25)</h2>
+                <div class="result-item">
+                    <img src="airline-logo.png" alt="Airline Logo">
+                    <div class="details">
+                        <p class="route">JFK → BOM</p>
+                        <p>Emirates | 11h 20m | Non-Stop</p>
+                    </div>
+                    <p class="price">$1,572</p>
+                    <button class="book-btn">Book Now</button>
+                </div>
+                <!-- Add more result items here -->
+            </section>
+        </main>
+
+        <!-- Filter Section -->
+        <aside class="filters">
+            <h3>Filter</h3>
+            <div class="filter-group">
+                <label>From</label>
+                <p>JFK</p>
+            </div>
+            <div class="filter-group">
+                <label>To</label>
+                <p>BOM</p>
+            </div>
+            <div class="map">
+                <p>Map Visualization</p>
+            </div>
+            <div class="price-slider">
+                <label>Price Range</label>
+                <input type="range" min="500" max="2500">
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
